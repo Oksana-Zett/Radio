@@ -78,4 +78,13 @@ public class Radio {
         }
         return reduceVolume();
     }
+    public int reduce1Volume() {
+        if (currentRadioVolume > 0 && currentRadioVolume <= 10) {
+            return currentRadioVolume -= 1;
+        }
+        if (currentRadioVolume == 0) {
+            return currentRadioVolume = 0;
+        }
+        return reduce1Volume();
+    }
 }
