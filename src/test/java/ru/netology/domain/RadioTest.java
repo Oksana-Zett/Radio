@@ -85,7 +85,7 @@ class RadioTest {
         Radio radio = new Radio();
         radio.currentRadioVolume = 10;
 
-        int expected = 0;
+        int expected = 9;
         int actual = radio.reduceVolume();
 
         assertEquals(expected, actual);
